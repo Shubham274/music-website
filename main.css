@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  color: #fff;
+  line-height: 1.6;
+  background-color: #252529;
+}
+
+#showcase {
+  background-image: url("https://jolly-kalam-23776e.netlify.app/mytunes/img/showcase.jpeg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  overflow-y: hidden;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-link {
+  font-size: 14px;
+  margin-right: 35px;
+}
+.nav-link-hide {
+  display: none;
+  text-align: left;
+}
+
+.menu-hide {
+  display: none !important;
+}
+
+#showcase .container {
+  margin-top: 176px;
+}
+
+.container {
+  max-width: 1180px;
+  text-align: center;
+  padding: 0 48px;
+  margin: 0 auto;
+}
+
+#showcase h1 {
+  font-size: 4em;
+  margin-bottom: 0;
+}
+
+#showcase h2 {
+  font-size: 2em;
+}
+
+.para {
+  font-size: 20.8px;
+}
+
+.music-head {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.music-section h3 {
+  font-size: 2rem;
+}
+
+.trial-btn {
+  background-color: #b90415;
+  color: #fff;
+  border: 0;
+  padding: 16px;
+  font-size: 15px;
+  font-family: "PT Sans", sans-serif;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+.section {
+  padding: 2rem 0;
+}
+
+.bg-light {
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+.section h3 {
+  font-size: 2rem;
+}
+
+.read-more {
+  background-color: #103063;
+  color: #fff;
+  padding: 1rem;
+  border: 0;
+  font-size: 0.9rem;
+  font-family: "PT Sans", sans-serif;
+}
+
+.entertainment {
+  background-image: url("https://jolly-kalam-23776e.netlify.app/mytunes/img/section-bg.jpeg");
+  padding: 10rem 0;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.gift-card {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  text-align: left;
+}
+
+.footer-content {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-links a {
+  color: #ccc;
+}
+.footer-content-wrapper {
+  font-size: 14px;
+  padding: 1rem;
+}
+
+.footer-content-wrapper h3 {
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: #444 solid 1px;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.footer-bottom-text {
+  background-color: #444;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #000;
+}
+
+.sidenav,
+#closebtn {
+  top: 0;
+  right: 0;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#closebtn {
+  position: absolute;
+}
+#overlay {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+@media screen and (max-width: 780px) {
+  .gift-card {
+    grid-template-columns: 1fr;
+  }
+  .footer-content {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .nav-link {
+    display: none;
+  }
+
+  .nav-link-hide {
+    display: block;
+  }
+  .hide-on-small {
+    display: none;
+  }
+  .menu-hide {
+    display: block !important;
+    margin-right: 23px;
+  }
+  .menu-show {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
